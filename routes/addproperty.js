@@ -7,8 +7,6 @@ const multiparty =require("multiparty")
 const IMAGE_UPLOAD_DIR = "./public/image"
 
 
-// router.post("/addproperty",checkReq(addfields, "body"),  addproperty);
-
 router.post('/addproperty', addproperty);
 router.use(express.static("public"));
 

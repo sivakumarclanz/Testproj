@@ -2,7 +2,7 @@
 // schemas.js
 const Joi = require("joi");
 const schemas = {
-   addfields: Joi.object({
+
     Add_flat: Joi.string().required(),
     Distance_radius: Joi.string().required(),
     Property_type: Joi.string().required(),
@@ -25,6 +25,6 @@ const schemas = {
     Due_date: Joi.string().required(),
     Frequency: Joi.string().required(),
     // Image: Joi.string().required(),
-  }),
-};
+    
+  };
 module.exports = schemas;

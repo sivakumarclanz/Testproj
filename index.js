@@ -5,14 +5,15 @@ const user = require("./routes/user");
 const addfields = require("./routes/addproperty");
 const passwordReset = require("./routes/passwordReset");
 const imagefields = require("./routes/image_upload");
+const addtenant = require("./routes/addtenant");
+const account = require("./routes/account");
+const aggrement = require("./routes/aggrement");
 // const passwordReset = require("./routes/passwordReset");
 const compression = require("compression");
 const helmet = require("helmet"); //  protect Node. js Express apps from common security threats
-const { addfield } = require("./models");
 const bodyParser = require('body-parser');
 const multer =  require('multer');
 const path = require('path')
-const IMAGE_UPLOAD_DIR = "./public/image"
 
 
 require("dotenv").config();
@@ -34,6 +35,9 @@ app.use("/api", user);
 app.use("/api", passwordReset);
 app.use("/api", imagefields);
 app.use("/api", addfields);
+app.use("/api", addtenant);
+app.use("/api", account);
+app.use("/api", aggrement);
 
 
 
