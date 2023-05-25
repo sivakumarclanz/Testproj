@@ -12,11 +12,11 @@ const agreement = async(req,res)=>{
     console.log(`fields = ${JSON.stringify(files,null,2)}`)
     
     const agree =new agreementfield({
-    
+      
         city: fields.city [0],
         State: fields.State [0],
         Ondate: fields.Ondate [0],
-        name: fields.Name [0],
+        name: fields.name [0],
         Father_name:fields.Father_name [0],
         Address_line1:fields.Address_line1 [0],
         Address_line2:fields.Address_line2 [0],
@@ -36,7 +36,8 @@ const agreement = async(req,res)=>{
         Address_line2:fields.Address_line2 [0],
         city:fields.city [0],
         State:fields.State [0],
-        
+        Pincode:fields.Pincode [0],
+        EBNumber:fields.EBNumber [0],
     })
 
     

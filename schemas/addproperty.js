@@ -24,7 +24,7 @@ const schemas = {
     Contact_no: Joi.string().required(),
     Due_date: Joi.string().required(),
     Frequency: Joi.string().required(),
-    // Image: Joi.string().required(),
+    Image: Joi.string().required(),
     
   };
 module.exports = schemas;

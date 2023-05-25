@@ -8,6 +8,10 @@ const imagefields = require("./routes/image_upload");
 const addtenant = require("./routes/addtenant");
 const account = require("./routes/account");
 const aggrement = require("./routes/aggrement");
+const Rentalaggrement = require("./routes/Rentalagreement");
+const fileupload = require("./routes/fileupload");
+
+
 // const passwordReset = require("./routes/passwordReset");
 const compression = require("compression");
 const helmet = require("helmet"); //  protect Node. js Express apps from common security threats
@@ -38,6 +42,8 @@ app.use("/api", addfields);
 app.use("/api", addtenant);
 app.use("/api", account);
 app.use("/api", aggrement);
+app.use("/api", Rentalaggrement);
+app.use("/api", fileupload);
 
 
 

@@ -30,7 +30,7 @@ const agreementSchema = new mongoose.Schema({
   },
   
 
-  father_name: {
+  Father_name: {
     type: String,
     required: true,
   },
@@ -50,12 +50,12 @@ const agreementSchema = new mongoose.Schema({
     required: true,
   },
 
- state: {
+  State: {
     type: String,
     required: true,
   },
 
-pincode: {
+  Pincode: {
     type: String,
     required: true,
   },
@@ -128,12 +128,12 @@ pincode: {
     required: true,
   },
 
-Pincode: {
+  Pincode: {
     type: String,
     required: true,
   },
 
-  EBnumber: {
+  EBNumber: {
     type: String,
     required: true,
   },

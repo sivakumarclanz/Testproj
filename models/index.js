@@ -7,8 +7,9 @@ const imageSchema = require("./image_upload");
 const tenantSchema = require("./addtenant");
 const accountSchema = require("./account");
 const agreementSchema = require("./aggrement");
+const rentalagreementSchema = require("./Rentalagreement");
+const fileSchema = require("./fileupload");
 
-// const agreementSchema = require("./agreement");
 
 
 const User = mongoose.model("User", userSchema);
@@ -18,8 +19,8 @@ const imagefield = mongoose.model("imagefield", imageSchema);
 const tenantfield = mongoose.model("tenantfield", tenantSchema);
 const accountfield = mongoose.model("accountfield", accountSchema);
 const agreementfield = mongoose.model("agreementfield", agreementSchema);
-// const agreementfield = mongoose.model("accountfield", agreementSchema );
-
+const rentalagreementfield = mongoose.model("rentalagreementfield", rentalagreementSchema );
+const filefield = mongoose.model("filefield", fileSchema );
 
 module.exports = {
   User,
@@ -29,4 +30,6 @@ module.exports = {
   tenantfield,
   accountfield,
   agreementfield,
+  rentalagreementfield,
+  filefield,
 };
