@@ -9,6 +9,7 @@ const accountSchema = require("./account");
 const agreementSchema = require("./aggrement");
 const rentalagreementSchema = require("./Rentalagreement");
 const fileSchema = require("./fileupload");
+const paymentSchema = require("./payment");
 
 
 
@@ -21,6 +22,7 @@ const accountfield = mongoose.model("accountfield", accountSchema);
 const agreementfield = mongoose.model("agreementfield", agreementSchema);
 const rentalagreementfield = mongoose.model("rentalagreementfield", rentalagreementSchema );
 const filefield = mongoose.model("filefield", fileSchema );
+const paymentfield = mongoose.model("paymentfield", paymentSchema );
 
 module.exports = {
   User,
@@ -32,4 +34,5 @@ module.exports = {
   agreementfield,
   rentalagreementfield,
   filefield,
+  paymentfield,
 };

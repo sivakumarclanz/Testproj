@@ -10,6 +10,7 @@ const account = require("./routes/account");
 const aggrement = require("./routes/aggrement");
 const Rentalaggrement = require("./routes/Rentalagreement");
 const fileupload = require("./routes/fileupload");
+const paymentorder = require("./routes/payment")
 
 
 // const passwordReset = require("./routes/passwordReset");
@@ -44,6 +45,7 @@ app.use("/api", account);
 app.use("/api", aggrement);
 app.use("/api", Rentalaggrement);
 app.use("/api", fileupload);
+app.use("/api", paymentorder);
 
 
 
